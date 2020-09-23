@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  cpp:
+    image: ntuangiang/opencv-mongo-cpp-test-1 # Image latest
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    ports:
+      - "2201:22" # Remote
+      - "7776:7777" # Debug
+    restart: always
