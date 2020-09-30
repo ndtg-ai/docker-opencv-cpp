@@ -6,6 +6,9 @@ ENV OpenCV_DIR /usr/local/lib/cmake/opencv4
 ENV CMAKE_PREFIX_PATH /usr/local
 ENV PKG_CONFIG_PATH /usr/local/lib64/pkgconfig
 
+ENV XDG_RUNTIME_DIR=/tmp/runtime-root
+ENV XAUTHORITY=/.Xauthority
+
 # Install tools and dependencies
 RUN apk add --update --no-cache ffmpeg ffmpeg-libs freeglut hdf5 \
     freetype jpeg openjpeg openjpeg-tools v4l-utils v4l-utils-libs gst-libav libgphoto2 gst-plugins-base \
