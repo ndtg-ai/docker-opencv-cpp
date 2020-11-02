@@ -1,4 +1,4 @@
-FROM ntuangiang/cpp
+FROM ntuangiang/cpp:latest
 
 ENV OPENCV_VERSION 4.5.0-pre
 ENV OpenCV_DIR /usr/local/lib/cmake/opencv4
